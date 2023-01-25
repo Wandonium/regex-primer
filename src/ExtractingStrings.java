@@ -16,6 +16,7 @@ public class ExtractingStrings {
         }
         matchCard();
         replaceCard();
+        replaceMath();
     }
 
     public static void matchCard() {
@@ -33,5 +34,23 @@ public class ExtractingStrings {
 
         String maskedCardNumber = matcher.replaceAll("XXXX-XXXX-XXXX-");
         System.out.println("Masked card num: " + maskedCardNumber);
+    }
+
+    public static void replaceMath() {
+        // replace math operation such input string
+        // 10 divided by 2
+        // becomes
+        // 10/2
+        Pattern pattern = Pattern.compile("(\\d+) divided by (\\d+)");
+        Matcher matcher = pattern.matcher("10 divided by 2");
+
+        if(matcher.find()) {
+            String simplified = "Operation: " + matcher.replaceFirst("$1/$2");
+            // print out math operation
+            System.out.println(simplified);
+            // get result of math operation
+            int result = Integer.valueOf(matcher.group(1)) / Integer.valueOf(matcher.group(2));
+            System.out.println("Result: " + result);
+        }
     }
 }
