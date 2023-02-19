@@ -4,10 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6e344a30-3f1d-4199-b558-8bd5518b531e" name="Changes" comment="Added the PatternProblems class for storing interesting Regex Patter problems that might come up in an interview or serve to remind me of how to come up with useful patterns.">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="6e344a30-3f1d-4199-b558-8bd5518b531e" name="Changes" comment="Removed extra '\n' characters in the phone numbers input string in PhoneNumbersProblem.java">
       <change beforePath="$PROJECT_DIR$/src/PatternProblems.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/PatternProblems.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/PhoneNumbersProblem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/PhoneNumbersProblem.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,7 +40,7 @@
     &quot;last_opened_file_path&quot;: &quot;C:/Users/wando/Documents/todo/pom.xml&quot;
   }
 }</component>
-  <component name="RunManager" selected="Application.PhoneNumbersProblem">
+  <component name="RunManager" selected="Application.PatternProblems">
     <configuration name="ExtractingStrings" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="ExtractingStrings" />
       <module name="Regex-Primer" />
@@ -57,6 +55,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="PatternProblems" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="PatternProblems" />
+      <module name="Regex-Primer" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="PhoneNumbersProblem" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="PhoneNumbersProblem" />
       <module name="Regex-Primer" />
@@ -66,6 +71,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.PatternProblems" />
         <item itemvalue="Application.PhoneNumbersProblem" />
         <item itemvalue="Application.ExtractingStrings" />
         <item itemvalue="Application.Main" />
@@ -88,7 +94,14 @@
       <option name="project" value="LOCAL" />
       <updated>1676792586552</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Removed extra '\n' characters in the phone numbers input string in PhoneNumbersProblem.java">
+      <created>1676792993469</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1676792993469</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -104,6 +117,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Added the PatternProblems class for storing interesting Regex Patter problems that might come up in an interview or serve to remind me of how to come up with useful patterns." />
-    <option name="LAST_COMMIT_MESSAGE" value="Added the PatternProblems class for storing interesting Regex Patter problems that might come up in an interview or serve to remind me of how to come up with useful patterns." />
+    <MESSAGE value="Removed extra '\n' characters in the phone numbers input string in PhoneNumbersProblem.java" />
+    <option name="LAST_COMMIT_MESSAGE" value="Removed extra '\n' characters in the phone numbers input string in PhoneNumbersProblem.java" />
   </component>
 </project>
