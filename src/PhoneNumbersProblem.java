@@ -6,7 +6,7 @@ public class PhoneNumbersProblem {
     // Problem: matching different Kenyan
     // phone number input configurations
     public static void main(String[] args) {
-        String phoneNumbers = "+254708072998\n\n0708072998\n\n708072998\n\n01108072998";
+        String phoneNumbers = "\n+254708072998\n0708072998\n708072998\n01108072998";
 
         Pattern pattern = Pattern.compile("^([+]2547|07|7|011)\\d{8}$", Pattern.MULTILINE);
         Matcher matcher = pattern.matcher(phoneNumbers);
