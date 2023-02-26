@@ -51,5 +51,18 @@ public class PatternProblems {
         System.out.println("Input string: " + input);
         System.out.println("No. of matches for pattern1: " + count1);
         System.out.println("No. of matches for pattern2: " + count2);
+
+        // We can also skip the last three strings/words by using
+        // the ^ (hat) character to exclude certain letters in the
+        // first character in a string/word.
+        // Ref: https://regexone.com/lesson/excluding_characters?
+        Pattern pattern3 = Pattern.compile("[^drp][a][n]");
+        Matcher matcher3 = pattern3.matcher(input);
+        int count3 = 0;
+        while(matcher3.find()) {
+            count3++;
+            System.out.println("Pattern3 matched string: " + matcher3.group());
+        }
+        System.out.println("No. of matches for pattern3: " + count3);
     }
 }
