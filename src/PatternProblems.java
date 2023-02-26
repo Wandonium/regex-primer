@@ -5,7 +5,8 @@ public class PatternProblems {
 
     public static void main(String[] args) {
         //matchingAnyCharacter();
-        matchingSpecificCharacters();
+        //matchingSpecificCharacters();
+        matchingRepeatedCharacters();
     }
 
     public static void matchingAnyCharacter() {
@@ -64,5 +65,21 @@ public class PatternProblems {
             System.out.println("Pattern3 matched string: " + matcher3.group());
         }
         System.out.println("No. of matches for pattern3: " + count3);
+    }
+    public static void matchingRepeatedCharacters() {
+        // Using curly brackets {} to match repeated characters.
+        String input = "\nwazzzzzup\nwazzzup\nwazup";
+        // The problem is to match the first two strings/words
+        // and to skip a 'wazup' with only one 'z'.
+        // Ref: https://regexone.com/lesson/repeating_characters?
+        Pattern pattern = Pattern.compile("waz{2,5}up");
+        Matcher matcher = pattern.matcher(input);
+        System.out.println("Input string: " + input);
+        int count = 0;
+        while(matcher.find()) {
+            count++;
+            System.out.println("Matched string: " + matcher.group());
+        }
+        System.out.println("No. of matches: " + count);
     }
 }
