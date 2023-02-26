@@ -4,8 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6e344a30-3f1d-4199-b558-8bd5518b531e" name="Changes" comment="Removed extra '\n' characters in the phone numbers input string in PhoneNumbersProblem.java">
-      <change beforePath="$PROJECT_DIR$/src/PatternProblems.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/PatternProblems.java" afterDir="false" />
+    <list default="true" id="6e344a30-3f1d-4199-b558-8bd5518b531e" name="Changes" comment="Added the matchingAnyCharacter method in the PatternProblems.java class.">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -101,7 +101,14 @@
       <option name="project" value="LOCAL" />
       <updated>1676792993469</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Added the matchingAnyCharacter method in the PatternProblems.java class.">
+      <created>1676793414112</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1676793414112</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -118,6 +125,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Added the PatternProblems class for storing interesting Regex Patter problems that might come up in an interview or serve to remind me of how to come up with useful patterns." />
     <MESSAGE value="Removed extra '\n' characters in the phone numbers input string in PhoneNumbersProblem.java" />
-    <option name="LAST_COMMIT_MESSAGE" value="Removed extra '\n' characters in the phone numbers input string in PhoneNumbersProblem.java" />
+    <MESSAGE value="Added the matchingAnyCharacter method in the PatternProblems.java class." />
+    <option name="LAST_COMMIT_MESSAGE" value="Added the matchingAnyCharacter method in the PatternProblems.java class." />
   </component>
 </project>

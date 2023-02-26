@@ -15,6 +15,7 @@ public class PatternProblems {
         // the above input while skipping the last string. We
         // also need to match all the characters including the
         // period character in the first three strings.
+        // Ref: https://regexone.com/lesson/wildcards_dot?
         Pattern pattern = Pattern.compile(".{3}\\.");
         Matcher matcher = pattern.matcher(input);
         int count = 0;
