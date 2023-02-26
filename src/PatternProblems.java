@@ -4,7 +4,8 @@ import java.util.regex.Pattern;
 public class PatternProblems {
 
     public static void main(String[] args) {
-        matchingAnyCharacter();
+        //matchingAnyCharacter();
+        matchingSpecificCharacters();
     }
 
     public static void matchingAnyCharacter() {
@@ -24,5 +25,31 @@ public class PatternProblems {
         System.out.println("Input string: " + input);
         System.out.println("No. of matches: " + count);
 
+    }
+
+    public static void matchingSpecificCharacters() {
+        // Using brackets [] to match specific characters
+        // e.g [abc] matches only a, b or c in a single character
+        String input = "\ncan\nman\nfan\ndan\nran\npan";
+        // The problem is to match the first three words/strings in
+        // the above input while skipping the last three words/strings.
+        // Ref: https://regexone.com/lesson/matching_characters?
+        Pattern pattern1 = Pattern.compile("[cmf]..");
+        Pattern pattern2 = Pattern.compile("[cmf][a][n]");
+        Matcher matcher1 = pattern1.matcher(input);
+        Matcher matcher2 = pattern2.matcher(input);
+        int count1 = 0, count2 = 0;
+        while(matcher1.find()) {
+            count1++;
+            System.out.println("Pattern1 matched string: " + matcher1.group());
+        }
+        while(matcher2.find()) {
+            count2++;
+            System.out.println("Pattern2 matched string: " + matcher2.group());
+        }
+
+        System.out.println("Input string: " + input);
+        System.out.println("No. of matches for pattern1: " + count1);
+        System.out.println("No. of matches for pattern2: " + count2);
     }
 }
